@@ -10,12 +10,63 @@ Begin VB.Form frmHello
    ScaleHeight     =   3090
    ScaleWidth      =   4680
    StartUpPosition =   3  'Windows Default
+   Begin VB.TextBox txtDisplay 
+      Height          =   1005
+      Left            =   240
+      TabIndex        =   3
+      Text            =   "txtDisplay"
+      Top             =   150
+      Width           =   4155
+   End
+   Begin VB.CommandButton cmdClear 
+      Caption         =   "&Clear"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   14.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   975
+      Left            =   2490
+      TabIndex        =   2
+      Top             =   1290
+      Width           =   1935
+   End
+   Begin VB.CommandButton cmdHello 
+      Caption         =   "&Display Hello"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   14.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   975
+      Left            =   240
+      TabIndex        =   1
+      Top             =   1290
+      Width           =   1905
+   End
    Begin VB.CommandButton cmdExit 
-      Caption         =   "Exit"
+      Caption         =   "E&xit"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   14.25
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   525
-      Left            =   1740
+      Left            =   1680
       TabIndex        =   0
-      Top             =   2040
+      Top             =   2430
       Width           =   1245
    End
 End
