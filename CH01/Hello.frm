@@ -11,10 +11,20 @@ Begin VB.Form frmHello
    ScaleWidth      =   4680
    StartUpPosition =   3  'Windows Default
    Begin VB.TextBox txtDisplay 
+      Alignment       =   2  'Center
+      BeginProperty Font 
+         Name            =   "Corbel"
+         Size            =   27.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   1005
-      Left            =   240
+      Left            =   270
+      MultiLine       =   -1  'True
       TabIndex        =   3
-      Text            =   "txtDisplay"
       Top             =   150
       Width           =   4155
    End
@@ -75,3 +85,15 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Private Sub cmdClear_Click()
+    txtDisplay.Text = ""
+End Sub
+
+Private Sub cmdExit_Click()
+    Beep
+    End
+End Sub
+
+Private Sub cmdHello_Click()
+    txtDisplay.Text = "Hello World!"
+End Sub
