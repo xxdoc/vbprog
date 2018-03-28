@@ -1,10 +1,11 @@
 Type=Exe
-Form=frmPrincipal.frm
 Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#C:\WINDOWS\system32\stdole2.tlb#OLE Automation
-Class=Class1; clsEncerrarProg.cls
+Form=frmMdiParent.frm
+Form=frmCadastro.frm
 Startup="frmMdiParent"
+HelpFile=""
 Command32=""
-Name="Project1"
+Name="CadastroProg"
 HelpContextID="0"
 CompatibleMode="0"
 MajorVer=1
